@@ -1,0 +1,29 @@
+const chalk = require("chalk")
+const fs = require("fs")
+
+global.ownerNumber = ["6281269824032@s.whatsapp.net"]
+global.nomerOwner = "6281269824032"
+global.nomorOwner = ['6281269824032']
+global.nameGEDE = "KEZGAA HOST⚡"
+global.namaDeveloper = "KEZGAA HOST⚡"
+global.namaBot = "KEZZ⚡ WA HOST"
+global.thumb = fs.readFileSync("./thumb.png")
+
+let file = require.resolve(__filename) 
+fs.watchFile(file, () => {
+fs.unwatchFile(file)
+console.log(chalk.redBright(`Update ${__filename}`))
+delete require.cache[file]
+require(file)
+})
+
+/*
+
+Thanks To By kezz
+DI UPDATE Dan Di Tulis Ulang Oleh kezz
+Ubah Nomor Owner?
+Ganti Di File ./owner.json
+Admin Panel : 30k
+Chat Wa : 6283134291600
+
+*/
